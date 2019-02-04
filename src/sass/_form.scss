@@ -1,0 +1,51 @@
+.au-form-group {
+  font-family: $AU-font;
+
+  &--error {
+    border-left: solid 5px $AU-color-error;
+    padding-left: 15px;
+  }
+  
+  + .au-form-group {
+    @include AU-space( margin-top, 2.5unit );
+  }
+  
+}
+
+.au-label {
+  &--block {
+    display:block;
+    margin-bottom: 5px;
+  }
+}
+
+.au-hint-text {
+  color: gray;
+  margin-bottom: 10px;
+  font-size: .9em;
+  display: block;
+}
+
+
+.au-error-text {
+  color: red;
+  margin-bottom: 10px;
+  font-size: .9em;
+  display: none;
+
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  + .au-form-group {
+    @include AU-space( margin-top, 2.5unit );
+  }
+}
+
+#error-summary, #success-summary {
+  display: none;
+  @include AU-space( margin-bottom, 2.5unit );
+}
