@@ -1,6 +1,4 @@
 .au-form-group {
-  font-family: $AU-font;
-
   &--error {
     border-left: solid 5px $AU-color-error;
     padding-left: 15px;
@@ -14,40 +12,63 @@
 
 
 .au-label {
+  font-family: $AU-font;
+  color: $AU-color-foreground-text;
   display: block;
-  margin-bottom: 5px;
+  @include AU-space( margin-bottom, .75unit );  
 
   &--inline {
     display: inline-block;
+  }
+
+  &--dark {
+    color: $AU-colordark-foreground-text;
   }
 }
 
 
 .au-hint-text {
+  font-family: $AU-font;
   color: gray;
-  margin-bottom: 10px;
-  font-size: .9em;
+  @include AU-space( margin-bottom, .75unit );
   display: block;
 
   &--inline {
     display: inline-block;
   }
+
+  &--dark {
+    color: $AU-colordark-foreground-muted;
+  }
 }
 
 
 .au-error-text {
-  color: red;
+  font-family: $AU-font;
+  color: $AU-color-error;
   font-weight: bold;
-  margin-bottom: 10px;
-  font-size: .9em;
-  display: none;
+  @include AU-space( margin-bottom, .75unit );
+  display: block;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--dark {
+    color: #FFBAB6;
+  }
 }
 
 
-fieldset {
+.au-fieldset {
   border: none;
   margin: 0;
   padding: 0;
+
+  .au-fieldset__legend {
+    @include AU-space( margin-bottom, .5unit );
+  }
+
 }
 
 

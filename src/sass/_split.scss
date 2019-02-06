@@ -1,0 +1,42 @@
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+// split style
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+.split-wrapper {
+	overflow: hidden;
+}
+
+.split {
+	padding: 1%;
+
+	&.split--alt {
+		background: $AU-color-background-alt;
+	}
+
+	&.split--dark {
+		background: $AU-colordark-background;
+		color: $AU-colordark-foreground-text;
+	}
+
+	&.split--dark.split--alt {
+		background: $AU-colordark-background-alt;
+	}
+
+	@include AU-media( sm ) {
+		width: 48%;
+		float: left;
+	}
+}
+
+
+@media print {
+	body,
+	.split--dark,
+	.split--alt,
+	.split--alt.split--dark {
+		background: transparent !important;
+	}
+	.split {
+		padding: 0 !important;
+		width: 100% !important;
+	}
+}

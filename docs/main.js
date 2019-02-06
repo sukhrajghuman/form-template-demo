@@ -59,7 +59,7 @@ function addErrorStates( invalidInputs ) {
         var hintText = hasHintText( inputId );
         var errorText = document.getElementById( inputId + '-error' );
 
-        errorText.style.display="block"
+        errorText.classList.remove( 'au-error-text--hidden' );
         invalidInputs[ i ].classList.add( 'au-text-input--invalid' );
         invalidInputs[ i ].setAttribute( 'aria-invalid', 'true');
         invalidInputs[ i ].setAttribute( 'aria-describedby', errorText.id + ' ' +  hintText  );
@@ -84,7 +84,7 @@ function removeErrorStates( validInputs ) {
         var inputId = validInputs[ i ].id;
         var errorText = document.getElementById( inputId + '-error' );        
 
-        errorText.style.display = "none";
+        errorText.classList.add( 'au-error-text--hidden' );
         validInputs[ i ].classList.remove( 'au-text-input--invalid' );
         validInputs[ i ].removeAttribute( 'aria-invalid');
         validInputs[ i ].removeAttribute( 'aria-describedby');

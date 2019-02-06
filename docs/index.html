@@ -117,18 +117,18 @@
 		<!-- NAME -->
 		<div class="au-form-group">
 			<label for="name" class="au-label">First Name</label>
-			<span class="au-error-text" id="name-error">Enter a first name</span>
+			<span class="au-error-text au-error-text--hidden" id="name-error">Enter a first name</span>
 			<input type="text" id="name" class="au-text-input" />
 		</div>
 		<div class="au-form-group">
 			<label for="surname" class="au-label">Surname</label>
-			<span class="au-error-text" id="surname-error">Enter a surname</span>
+			<span class="au-error-text au-error-text--hidden" id="surname-error">Enter a surname</span>
 			<input type="text" id="surname" class="au-text-input" />
 		</div>
 
 		<div class="au-form-group">
 			<label for="password" class="au-label">Password</label>
-			<span class="au-error-text" id="password-error">Enter a password greater than 6 characters</span>
+			<span class="au-error-text au-error-text--hidden" id="password-error">Enter a password greater than 6 characters</span>
 			<span class="au-hint-text" id="password-hint">Min 6 charachters</span>
 			<input type="text" id="password" class="au-text-input" aria-describedby="password-hint" />
 		</div>
@@ -136,14 +136,14 @@
 		<div class="au-form-group">
 			<label for="email" class="au-label">Email</label>
 			<span class="au-hint-text" id="email-hint">In the format abc@gmail.com</span>
-			<span class="au-error-text" id="email-error">Enter an email in the valid format</span>
+			<span class="au-error-text au-error-text--hidden" id="email-error">Enter an email in the valid format</span>
 			<input type="text" id="email" class="au-text-input" aria-describedby="email-hint" />
 		</div>
 
 		<!--RADIO OPTIONS -->
 		<div class="au-form-group">
-			<fieldset>
-				<legend>Pick your favorite device</legend>
+			<fieldset class="au-fieldset">
+				<legend class="au-fieldset__legend">Pick your favorite device</legend>
 				<label class="au-control-input au-control-input--block">
 					<input class="au-control-input__input" type="radio" name="radio-ex" />
 					<span class="au-control-input__text">Phone</span>

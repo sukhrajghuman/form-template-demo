@@ -2,7 +2,7 @@
 // $AU-colordark-foreground-text:   #ffffff;
 // $AU-colordark-foreground-action: #f9f9f9;
 // $AU-colordark-foreground-focus:  #13e241;
-$AU-colordark-background:        #96bad8;
+// $AU-colordark-background:        #96bad8;
 
 // Light theme overrides
 // $AU-color-foreground-action: #134169;
@@ -14,12 +14,13 @@ $AU-main-nav-breakpoint: sm;
 // UI-Kit
 @import './_auds.scss';
 @import './form.scss';
+@import './split.scss';
 
 
 // Reset the body
 body {
 	padding: 0;
-	margin: 0;
+	margin: 1rem;
 }
 
 
@@ -35,4 +36,12 @@ main > .au-body {
 
 main {
 	@include AU-space( padding-top, 2unit );
+}
+
+div[ class^="col-sm" ] + div[ class^="col-sm" ] {
+	@include AU-space( margin-top, 2unit );
+
+	@include AU-media( sm ) {
+			margin-top: 0;
+		}
 }
