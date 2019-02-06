@@ -15,7 +15,7 @@
   font-family: $AU-font;
   color: $AU-color-foreground-text;
   display: block;
-  @include AU-space( margin-bottom, .75unit );  
+  margin-bottom: 5px; 
 
   &--inline {
     display: inline-block;
@@ -30,11 +30,12 @@
 .au-hint-text {
   font-family: $AU-font;
   color: gray;
-  @include AU-space( margin-bottom, .75unit );
+  margin-bottom: 10px;
   display: block;
 
   &--inline {
     display: inline-block;
+    margin-bottom: 10px;
   }
 
   &--dark {
@@ -47,7 +48,7 @@
   font-family: $AU-font;
   color: $AU-color-error;
   font-weight: bold;
-  @include AU-space( margin-bottom, .75unit );
+  margin-bottom: 10px;
   display: block;
 
   &--hidden {
