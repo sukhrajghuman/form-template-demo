@@ -6,7 +6,8 @@ var invalidInputs = [];
 var validInputs = [];
 
 var errorSummaryContainer = document.getElementById( 'error-summary' );
-var errorSummaryText = document.querySelector( '#error-summary p' );
+var errorSummaryText = document.querySelector( '#error-summary ul' );
+var errorSummaryHeading = document.querySelector( '#error-summary h3' );
 var successSummaryContainer = document.getElementById( 'success-summary' );
 
 
@@ -27,7 +28,7 @@ function submitForm( event ) {
         errorSummaryContainer.style.display = "block";
         errorSummaryText.innerHTML = createErrorSummary( invalidInputs );
         var firstError = document.querySelector( '#error-summary a' );
-        firstError.focus();
+        errorSummaryHeading.focus();
         
     }
     else {
