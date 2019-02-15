@@ -6,7 +6,7 @@ var invalidInputs = [];
 var validInputs = [];
 
 var errorSummaryContainer = document.getElementById( 'error-summary' );
-var errorSummaryText = document.querySelector( '#error-summary ul' );
+var errorSummaryText = document.querySelector( '#error-summary ol' );
 var errorSummaryHeading = document.querySelector( '#error-summary h3' );
 var successSummaryContainer = document.getElementById( 'success-summary' );
 
