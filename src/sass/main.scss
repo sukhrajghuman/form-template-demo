@@ -20,7 +20,11 @@ $AU-main-nav-breakpoint: sm;
 // Reset the body
 body {
 	padding: 0;
-	margin: 1rem;
+	margin: 0;
+}
+
+.test-page {
+	@include AU-space( margin, 1unit );
 }
 
 
