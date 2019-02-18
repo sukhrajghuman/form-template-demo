@@ -79,8 +79,8 @@ $AU-color-error-forgeround-text: #db0e0e;
 
     .ie8 &,
     .lt-ie8 & {
-      content: '⇗';
-      color: $AU-color-foreground-action;
+      content: '!';
+      color: $AU-color-error-forgeround-text;
     }
   }
 
