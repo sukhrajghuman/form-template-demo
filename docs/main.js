@@ -65,8 +65,8 @@ function addErrorStates( invalidInputs ) {
         invalidInputs[ i ].setAttribute( 'aria-invalid', 'true');
         invalidInputs[ i ].setAttribute( 'aria-describedby', errorText.id + ' ' +  hintText  );
 
-        var parentDiv = invalidInputs[ i ].parentNode;
-        parentDiv.classList.add( 'au-form-group--error' );
+        // var parentDiv = invalidInputs[ i ].parentNode;
+        // parentDiv.classList.add( 'au-form-group--error' );
     }
 }
 
@@ -90,8 +90,8 @@ function removeErrorStates( validInputs ) {
         validInputs[ i ].removeAttribute( 'aria-invalid');
         validInputs[ i ].removeAttribute( 'aria-describedby');
 
-        var parentDiv = validInputs[ i ].parentNode;
-        parentDiv.classList.remove( 'au-form-group--error' );
+        // var parentDiv = validInputs[ i ].parentNode;
+        // parentDiv.classList.remove( 'au-form-group--error' );
     }
 }
 
